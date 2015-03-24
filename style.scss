@@ -1,3 +1,6 @@
+---
+---
+
 //
 // IMPORTS
 //
@@ -15,9 +18,9 @@ html {
 }
 
 body {
-  background: #FBFBFB;
-  font: 56px/1.4 $hangul;
-  color: #414141;
+	background: $white;
+  font: 18px/1.4 $helvetica;
+  color: $darkGray;
 }
 
 .container {
@@ -28,8 +31,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $hangul;
-  color: #414141;
+  font-family: $helveticaNeue;
+  color: $darkerGray;
   font-weight: bold;
   
   line-height: 1.7;
@@ -42,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 h1 {  
-  font-size: 28px;
+  font-size: 30px;
   a {
     color: inherit;
   }
@@ -108,9 +111,8 @@ img {
 }
 
 .date {
-  font: 12px/1.4 $helvetica;
   font-style: italic;
-  color: #808080;
+  color: $gray;
 }
 
 // Specify the color of the selection
@@ -160,7 +162,7 @@ img {
   float: left;
   width: 70px;
   height: 70px;
-  margin-right: 10px;
+  margin-right: 15px;
 
   @include mobile {
     float: none;
@@ -169,7 +171,7 @@ img {
   }
 
   img {
-    border-radius: 35px;
+    border-radius: 5px;
   }
 }
 
@@ -187,17 +189,16 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $nickname; 
-  font-weight: bold;
+  font-family: $helveticaNeue; 
+  font-weight: 300;
   font-size: 28px;
-  letter-spacing: 0px;
+  letter-spacing: 1px;
 }
 
 .site-description {
-  margin: -2px 0 0 0;
-  font-family: $nickname;
+  margin: -5px 0 0 0;
   color: $gray;
-  font-size: 10px;
+  font-size: 16px;
   
   @include mobile {
     margin: 3px 0;
@@ -206,9 +207,9 @@ img {
 
 nav {
   float: right;
-  margin-top: 33px; // @TODO: Vertically middle align
-  font-family: $hangul; 
-  font-size: 14px;
+  margin-top: 23px; // @TODO: Vertically middle align
+  font-family: $helveticaNeue; 
+  font-size: 18px;
   
   @include mobile {
     float: none;
@@ -270,17 +271,6 @@ nav {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
-}
-
-footment {
-  margin: 50px 0 0 0;
-  font-family: $nickname;
-  color: $gray;
-  font-size: 11px;
-  
-  @include mobile {
-    margin: 50px 0;
-  }
 }
 
 /*Tag from https://alexpearce.me*/
