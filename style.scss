@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+	background: #FBFBFB;
+  font: 16px/1.4 $hangul;
+  color: #414141;
 }
 
 .container {
@@ -31,8 +31,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
+  font-family: $hangul;
+  color: #414141;
   font-weight: bold;
   
   line-height: 1.7;
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 h1 {  
-  font-size: 30px;
+  font-size: 28px;
   a {
     color: inherit;
   }
@@ -111,8 +111,9 @@ img {
 }
 
 .date {
+  font: 12px/1.4 $helvetica;
   font-style: italic;
-  color: $gray;
+  color: #808080;
 }
 
 // Specify the color of the selection
@@ -171,7 +172,7 @@ img {
   }
 
   img {
-    border-radius: 5px;
+    border-radius: 35px;
   }
 }
 
@@ -189,16 +190,17 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue; 
-  font-weight: 300;
+  font-family: $nickname; 
+  font-weight: bold;
   font-size: 28px;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
 }
 
 .site-description {
-  margin: -5px 0 0 0;
+  margin: -2px 0 0 0;
+  font-family: $nickname;
   color: $gray;
-  font-size: 16px;
+  font-size: 10px;
   
   @include mobile {
     margin: 3px 0;
@@ -207,9 +209,9 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue; 
-  font-size: 18px;
+  margin-top: 33px; // @TODO: Vertically middle align
+  font-family: $hangul; 
+  font-size: 14px;
   
   @include mobile {
     float: none;
